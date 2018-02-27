@@ -53,22 +53,6 @@ app.get('/:locale(en|fr)',  (req, res) => {
   res.render('accueil.ejs')  
 })
 
-// app.get('/en', (req, res) => {
-// // 'en' est enregistré comme langue
-// res.setLocale('en')
-// console.log(res.__('bonjour'));
-
-// res.render('accueil.ejs')  
-// });
-
-// app.get('/fr', (req, res) => {
-// // 'fr' est enregistré comme langue
-// res.setLocale('fr')
-// console.log(res.__('bonjour'));
-
-// res.render('accueil.ejs')  
-// });
-
 
 ////////////////////////////////////////////
 app.get('/', function (req, res) {
