@@ -50,7 +50,8 @@ app.get('/:locale(en|fr)',  (req, res) => {
   // on peut maintenant traduire
   //console.log('Cookies: ', req.cookies.langueChoisie);
 
-  res.render('accueil.ejs')  
+  //res.redirect(req.get("referer"))
+  res.render('accueil.ejs') 
 })
 
 
