@@ -1,4 +1,8 @@
 {
 	"bonjour": "Bonjour",
-	"maison": "Maison"
+	"maison": "Maison",
+
+	"accueil" : "Accueil",
+	"vider" : "Vider",
+	"adresse" : "Adresses"
 }
