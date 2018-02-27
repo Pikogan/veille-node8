@@ -48,9 +48,7 @@ app.get('/:locale(en|fr)',  (req, res) => {
   res.cookie('langueChoisie', req.params.locale)
 
   // on peut maintenant traduire
-  //console.log(res.__('bonjour'));
-  console.log(res.__('maison'));
-  console.log('Cookies: ', req.cookies.langueChoisie);
+  //console.log('Cookies: ', req.cookies.langueChoisie);
 
   res.render('accueil.ejs')  
 })
