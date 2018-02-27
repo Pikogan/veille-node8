@@ -49,7 +49,7 @@ app.get('/:locale(en|fr)',  (req, res) => {
 
   // on peut maintenant traduire
   //console.log(res.__('bonjour'));
-  //console.log(res.__('maison'));
+  console.log(res.__('maison'));
   console.log('Cookies: ', req.cookies.langueChoisie);
 
   res.render('accueil.ejs')  

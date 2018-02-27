@@ -1,3 +1,13 @@
+<% 
+if (getLocale() == "fr"){
+	let language = "en"
+	console.log(language)
+}else{
+	let language = "fr"
+	console.log(language)
+}
+%>
+
 <div class="global couleur-menu">
 	<div> <!-- début barre de menu -->
 		<input id='burger' type='checkbox'>
@@ -7,12 +17,22 @@
 		</label>
 		<div id='menu'>
 			<nav> 		 
-				 <a href='/'><i class="fa fa fa-users" aria-hidden="true"></i><%= __('accueil') %></a>
-				 <a href='/vider'><i class="fa fa-industry" aria-hidden="true"></i><%= __('vider') %></a>
-				 <a href='/adresse'><i class="fa fa-graduation-cap" aria-hidden="true"></i><%= __('adresse') %></a>
 
-				 <a href='/en'>Anglais</a>
-				 <a href='/fr'>Français</a>
+					<a href='/'><i class="fa fa fa-users" aria-hidden="true"></i><%= __('accueil') %></a>
+					<a href='/vider'><i class="fa fa-industry" aria-hidden="true"></i><%= __('vider') %></a>
+					<a href='/adresse'><i class="fa fa-graduation-cap" aria-hidden="true"></i><%= __('adresse') %></a>
+
+					<% 
+						if (getLocale() == "fr"){
+							let language = "en" %>
+							<a href=<%= language %>><%= __('langue') %></a>
+						<% }else{
+							let language = "fr" %>
+							<a href=<%= language %>><%= __('langue') %></a>
+						<% }
+					%>
+
+				 
 			</nav> 
 			<form class='recherche'  action='/adresse' name="recherche" id="recherche">
 			    <input type="text" name="recherche" 
