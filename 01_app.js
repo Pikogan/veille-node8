@@ -12,8 +12,8 @@ const i18n = require('i18n');
 const cookieParser = require('cookie-parser');
 
 /* Ajoute l'objet i18n à l'objet global «res» */
-app.use(i18n.init);
 app.use(cookieParser());
+app.use(i18n.init);
 
 i18n.configure({ 
    locales : ['fr', 'en'],
@@ -50,8 +50,8 @@ app.get('/:locale(en|fr)',  (req, res) => {
   // on peut maintenant traduire
   //console.log('Cookies: ', req.cookies.langueChoisie);
 
-  //res.redirect(req.get("referer"))
-  res.render('accueil.ejs') 
+  res.redirect(req.get("referer"))
+  //res.render('accueil.ejs') 
 })
 
 

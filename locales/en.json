@@ -12,5 +12,11 @@
 	"fondationLinux" : "Linux Foundation",
 	"sgbd" : "SGBD noSQL mongoDB",
 	"telechargeMongo" : "Download mongoDB",
-	"npm" : "NPM"
+	"npm" : "NPM",
+
+	"id" : "_id",
+	"nom" : "Last name",
+	"prenom" : "First name",
+	"telephone" : "Phone number",
+	"courriel" : "Email address"
 }
